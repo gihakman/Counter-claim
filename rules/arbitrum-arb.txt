@@ -1,0 +1,26 @@
+ARBITRUM DAO — ARB AIRDROP ELIGIBILITY (Feb 2023 snapshot)
+
+The ARB airdrop distributed governance tokens across three activity vectors. Each vector granted "airdrop points" and the final ARB allocation was derived from a points schedule. Wallets receive ARB if and only if their combined points reach the minimum documented threshold, subject to explicit exclusions.
+
+Snapshot dates: February 6, 2023 for Ethereum activity; March 1, 2023 for Arbitrum One and Arbitrum Nova activity.
+
+C1. Arbitrum One Activity
+Wallet made at least one transaction across at least 3 distinct months on Arbitrum One before the snapshot, or bridged at least $50 of assets to Arbitrum One before September 30, 2022, or executed at least one transaction on Arbitrum One before September 30, 2022. Meeting one sub-criterion within C1 grants points; meeting more grants more.
+
+C2. Arbitrum Nova Activity
+Wallet executed at least one transaction on Arbitrum Nova before the snapshot. Additional points for volume, contract interactions, and Time-Weighted Value locked.
+
+C3. Ethereum-Origin Activity that led to Arbitrum
+Wallet was an early Arbitrum One user, meaning it interacted with Arbitrum before the snapshot but originated from an Ethereum L1 address with prior on-chain history dating to at least 2022.
+
+Combined points scoring:
+The points schedule assigned integer points per satisfied sub-criterion. A wallet with total combined points below 3 was not eligible for ARB and received zero.
+
+Explicit ineligibility (a wallet is excluded regardless of points when):
+X1. The wallet was classified as Sybil under the published Sybil detection rules that the ARB airdrop team documented. Sybil filters included: multiple wallets funded by the same source and executing correlated transactions within short time windows; wallets exhibiting clustered "airdrop-farming" transaction patterns (deposit-and-immediately-withdraw loops, bridge-back-and-forth patterns, and other documented signals).
+X2. The wallet is a smart contract with no identifiable individual controller and no legitimate business reason (e.g., a well-known DAO treasury is not disqualified).
+X3. The wallet had fewer than 3 combined points across all vectors.
+
+Sybil-filtered wallets forfeit their ARB allocation in full and may not appeal via allocation adjustments through the airdrop claim UI. The published policy applied uniformly to all wallets and constitutes the complete standard for airdrop eligibility.
+
+Source: Arbitrum Foundation ARB airdrop documentation, distributed February-March 2023.

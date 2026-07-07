@@ -1,0 +1,17 @@
+UNISWAP UNI GOVERNANCE TOKEN — AIRDROP ELIGIBILITY (Sep 2020 snapshot)
+
+The initial UNI distribution granted 400 UNI per address to every wallet that met at least ONE of the conditions below at the snapshot block (Ethereum block 10861674, September 1, 2020 00:00 UTC). Liquidity providers received additional UNI proportional to historical liquidity, on a separate schedule.
+
+Eligibility conditions (any one of these qualifies the wallet for the base 400 UNI):
+C1. The address made at least one swap on Uniswap v1 or Uniswap v2 before the snapshot block.
+C2. The address was a historical liquidity provider on Uniswap v1 or Uniswap v2, whether or not liquidity was still deposited at the snapshot block.
+C3. The address is the "owner" (as recorded on Uniswap v1 or v2) of a liquidity position, including SOCKS redeemers.
+
+Explicit ineligibility (a wallet is disqualified even if it otherwise meets C1-C3 when):
+X1. The address only interacted through a proxy / router that mediated for another user, not the address itself.
+X2. The address is a duplicate created after the snapshot block.
+X3. The address was flagged as a Sybil cluster by the initial distribution team using clustering heuristics documented in the announcement.
+
+Claim window closed at Ethereum block 12463713. Unclaimed UNI reverted to governance.
+
+The eligibility criteria above are the sole standard for whether a wallet was entitled to the initial 400 UNI grant. Any other reasoning by an operator or downstream analytics tool is not part of the rule.

@@ -1,0 +1,28 @@
+ENS GOVERNANCE TOKEN — AIRDROP ELIGIBILITY (Oct 2021 snapshot)
+
+The ENS airdrop distributed the ENS governance token to accounts that owned at least one .eth name during the snapshot window. Snapshot date: October 31, 2021 00:00 UTC.
+
+A wallet was eligible for ENS if it satisfied ALL of C1, C2, and C3, with adjustments per C4 through C6.
+
+C1. Ownership
+The address owned at least one .eth name at any point in the snapshot window (May 4, 2019 through October 31, 2021 00:00 UTC).
+
+C2. Reverse Record
+The address had set a primary ENS name (also called the reverse record) at the snapshot block. Setting the reverse record was necessary to demonstrate that a human user, not a resale bot, controlled the wallet.
+
+C3. Non-expired at snapshot
+The name owned at snapshot must have been non-expired for at least a portion of the snapshot window. Names that expired before the snapshot window started did not qualify; names that expired mid-window did qualify for the pre-expiry period.
+
+Multipliers:
+C4. Length of ownership. Points scaled with total time the address held any .eth name.
+C5. Registration age. Extra points if the wallet's oldest name was registered before the price adjustment on May 4, 2019.
+C6. Human check. Wallets that opted in to signed messages on the Ethereum Attestation Service before Oct 31, 2021 could receive a small additional grant. This was optional and had no effect on base eligibility.
+
+Explicit ineligibility (a wallet does not qualify regardless of C1-C6 when):
+X1. The wallet's only names were reserved or premium names purchased without a reverse record set.
+X2. The wallet is a known contract that automated bulk .eth registration without setting reverse records (Sybil registration bots).
+X3. The wallet is a duplicate of a wallet already counted under the C1 criterion (i.e., attempted double claims).
+
+Wallets ineligible under X1-X3 receive zero ENS. All other qualifying wallets receive base + multiplier ENS per the published grant schedule.
+
+Source: True Names Ltd (ENS Labs) announcement, November 2021.

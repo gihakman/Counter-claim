@@ -1,0 +1,29 @@
+OPTIMISM AIRDROP #1 — ELIGIBILITY CRITERIA (May 2022 snapshot)
+
+Airdrop #1 distributed 231,000,000 OP tokens to addresses that supported early Optimism, governed by the following documented criteria. Snapshot date: March 25, 2022 00:00 UTC.
+
+A wallet qualified for a base OP allocation if it satisfied at least ONE of the categories C1 through C5 below. A wallet that qualified under multiple categories received the sum of the applicable allocations. Category-specific ineligibility rules follow each category.
+
+C1. Optimism User
+A wallet transacted on Optimism at least once and paid gas on Optimism at least once before the snapshot. Wallets that only received tokens without initiating any transaction do NOT satisfy C1.
+
+C2. Repeat Optimism User
+A wallet met C1 in each of at least four distinct calendar weeks before the snapshot. "Calendar week" is defined as Monday 00:00 UTC to Sunday 23:59 UTC.
+
+C3. DAO Voter
+A wallet was a delegate that cast at least one vote on the following governance systems, on any chain, before the snapshot: MakerDAO, ENS DAO, Gitcoin, Compound, Uniswap, Optimism internal governance.
+
+C4. Multi-sig Signer
+A wallet was a signer on a Gnosis Safe on Optimism that held at least $1000 in assets for at least ten consecutive days before the snapshot.
+
+C5. Gitcoin Donor
+A wallet donated to a Gitcoin grant in at least one round before the snapshot. Donations that were later refunded do not count.
+
+Explicit ineligibility (a wallet is excluded even if it otherwise meets C1-C5 when):
+X1. The wallet is on the Sybil filter list produced by the Optimism team's clustering study. Wallets flagged by the Sybil filter list are ineligible in full and may not appeal via allocation adjustments.
+X2. The wallet is a smart contract without a clear individual controller. Sponsor multi-sigs are addressed under C4.
+X3. The wallet was created after the snapshot block.
+
+Wallets classified as ineligible under X1 through X3 receive zero OP. All other eligible wallets received allocations per the published category schedule.
+
+Source: Optimism Foundation, "Airdrop #1 Details", published community.optimism.io in April 2022. The above text is the eligibility rule for Airdrop #1 as of the snapshot. Subsequent airdrops (Airdrop #2, Airdrop #3) have separate rule sets not covered here.
