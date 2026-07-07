@@ -1,7 +1,7 @@
 """Test-level shims for direct-mode.
 
 Direct mode ships handlers for `ExecPrompt` (the raw LLM call used by
-`gl.nondet.exec_prompt`) but not for `ExecPromptTemplate` — the wrapper
+`gl.nondet.exec_prompt`) but not for `ExecPromptTemplate` - the wrapper
 used by `gl.eq_principle.prompt_comparative` and
 `gl.eq_principle.prompt_non_comparative`. To keep the contract idiomatic
 we patch direct-mode to route `ExecPromptTemplate` requests through the

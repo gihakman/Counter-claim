@@ -2,7 +2,7 @@
 
 **A public, validator-issued verdict layer for algorithmic decisions.**
 
-Counterclaim files, adjudicates, and publishes structured verdicts on decisions an algorithm made under a published rule. Beachhead: airdrop-eligibility disputes. Every verdict is produced by independent validators on the GenLayer Bradbury testnet, is appealable under Optimistic Democracy, and is written to the chain — not to a vendor's dashboard.
+Counterclaim files, adjudicates, and publishes structured verdicts on decisions an algorithm made under a published rule. Beachhead: airdrop-eligibility disputes. Every verdict is produced by independent validators on the GenLayer Bradbury testnet, is appealable under Optimistic Democracy, and is written to the chain - not to a vendor's dashboard.
 
 - **Live contract**: [`0x3FD5049B60FF5F78a85689BB37Ec3A2F86D1AEE1`](https://explorer-bradbury.genlayer.com/address/0x3FD5049B60FF5F78a85689BB37Ec3A2F86D1AEE1) on Bradbury
 - **Deploy transaction**: [`0x70752ddb…d59a6cff`](https://explorer-bradbury.genlayer.com/tx/0x70752ddb4c9ab567816ff606ac3139c0d4d789f52b427772811fedb0d59a6cff)
@@ -11,7 +11,7 @@ Counterclaim files, adjudicates, and publishes structured verdicts on decisions 
 
 ## What it is
 
-When an algorithm makes a decision against a user under a public rule — a Sybil filter on an airdrop, a demonetization, a deactivation, a denied refund — the user has no cheap, fast, neutral way to test that decision against the published criteria. Complaining is performative; suing is more expensive than the loss.
+When an algorithm makes a decision against a user under a public rule - a Sybil filter on an airdrop, a demonetization, a deactivation, a denied refund - the user has no cheap, fast, neutral way to test that decision against the published criteria. Complaining is performative; suing is more expensive than the loss.
 
 Counterclaim closes that gap on-chain. The petitioner submits three things:
 
@@ -30,7 +30,7 @@ Independent validators on GenLayer read the same inputs, reason about whether th
 }
 ```
 
-That structured verdict — decision, confidence, per-condition findings, rationale — is written on-chain. The petitioner may appeal once; anyone may read the record forever.
+That structured verdict - decision, confidence, per-condition findings, rationale - is written on-chain. The petitioner may appeal once; anyone may read the record forever.
 
 ## Why on GenLayer
 
@@ -54,10 +54,10 @@ Five writes, four views, deployed as a single intelligent contract:
 | `adjudicate(case_id)` | write | no | Run the verdict round. |
 | `appeal(case_id)` | write | no | Petitioner-only single-shot appeal. |
 | `withdraw_fees()` | write | no | Fee recipient sweeps accrued fees per `fee_bps`. |
-| `get_case(id)` | view | — | Return one case as a structured record. |
-| `list_cases(offset, limit)` | view | — | Paginated docket listing. |
-| `total_cases()` | view | — | Total cases filed. |
-| `fee_config()` | view | — | Deployed fee parameters. |
+| `get_case(id)` | view | - | Return one case as a structured record. |
+| `list_cases(offset, limit)` | view | - | Paginated docket listing. |
+| `total_cases()` | view | - | Total cases filed. |
+| `fee_config()` | view | - | Deployed fee parameters. |
 
 The ABI schema is generated from the contract by `genvm-lint schema` and shipped as `deployments/counterclaim.schema.json`.
 
@@ -66,7 +66,7 @@ The ABI schema is generated from the contract by `genvm-lint schema` and shipped
 - **Contract**: Python 3.12 intelligent contract, pinned GenVM runner (`py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6`), storage via `TreeMap[u256, Case]` + `DynArray[u256]`, verdicts via `gl.eq_principle.prompt_non_comparative`.
 - **Lint / test**: `genvm-linter` for AST + SDK validation; `genlayer-test` for direct-mode tests (12 tests, all passing).
 - **Deploy / seed**: TypeScript scripts using `genlayer-js` (`createClient`, `createAccount`) targeting Bradbury directly.
-- **Frontend**: React 18 + Vite 5 + TypeScript. `genlayer-js` for reads and writes. Wallet integration uses raw EIP-1193 (`window.ethereum`) with `wallet_addEthereumChain` and `wallet_switchEthereumChain` — no MetaMask Snap required. Live transaction status polls the chain and links to the Bradbury explorer.
+- **Frontend**: React 18 + Vite 5 + TypeScript. `genlayer-js` for reads and writes. Wallet integration uses raw EIP-1193 (`window.ethereum`) with `wallet_addEthereumChain` and `wallet_switchEthereumChain` - no MetaMask Snap required. Live transaction status polls the chain and links to the Bradbury explorer.
 - **Hosting**: Vercel-deployable from the repo root via `vercel.json`.
 
 ## Repository layout
@@ -112,13 +112,13 @@ npm run seed
 
 `.env` at the repo root:
 
-- `ACCOUNT_PRIVATE_KEY` — funded Bradbury private key. **Never committed.** Used only to sign the deploy and seed transactions.
-- `FEE_RECIPIENT` — optional. Address that receives protocol fees. Defaults to the deployer.
-- `FEE_BPS` — optional. Basis points routed to `FEE_RECIPIENT` on withdrawal. Default `100` (1.00%).
+- `ACCOUNT_PRIVATE_KEY` - funded Bradbury private key. **Never committed.** Used only to sign the deploy and seed transactions.
+- `FEE_RECIPIENT` - optional. Address that receives protocol fees. Defaults to the deployer.
+- `FEE_BPS` - optional. Basis points routed to `FEE_RECIPIENT` on withdrawal. Default `100` (1.00%).
 
 `app/.env` is optional:
 
-- `VITE_COUNTERCLAIM_ADDRESS` — override the deployed contract address at build time. If unset, the address is baked into `app/src/lib/config.ts`, so the hosted site works with zero configuration.
+- `VITE_COUNTERCLAIM_ADDRESS` - override the deployed contract address at build time. If unset, the address is baked into `app/src/lib/config.ts`, so the hosted site works with zero configuration.
 
 Copy `.env.example` (repo root) or `app/.env.example` before making a real `.env`. Real values must never be committed.
 

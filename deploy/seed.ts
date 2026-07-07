@@ -4,10 +4,10 @@
  * For each case: file_case (payable) -> poll ACCEPTED -> adjudicate ->
  * poll ACCEPTED -> read the verdict via get_case.
  *
- * Rules are pulled from `rules/*.txt` in the repo — real airdrop-eligibility
+ * Rules are pulled from `rules/*.txt` in the repo - real airdrop-eligibility
  * snapshots (Uniswap UNI, Optimism Airdrop #1, Arbitrum ARB, ENS). The
  * evidence texts describe real-looking wallet situations that clearly meet
- * every published condition, so the correct verdict is "out_of_policy" —
+ * every published condition, so the correct verdict is "out_of_policy" -
  * i.e., the algorithm violated its own rules.
  */
 import "dotenv/config";
@@ -58,7 +58,7 @@ const SEEDS: SeedCase[] = [
     decisionChallenged:
       "Marked Sybil and awarded 0 ARB. No allocation.",
     evidenceText:
-      "The petitioner's wallet 0xC0FFEE0001A11ceB0b0000000000000000000003 satisfied C1 with strong signal: 217 transactions on Arbitrum One spread over 9 distinct months, plus a $312 bridge from Ethereum on July 18, 2022 (well before the September 30, 2022 threshold), plus native DEX activity on GMX, Camelot, and Radiant totalling $18,400 in volume. The wallet also has 21 transactions on Arbitrum Nova (C2). Points total across vectors is well above 3 (X3 does not apply). The wallet is a single-user EOA controlled by one individual (X2 does not apply). Funding history: initial 0.05 ETH from Coinbase on May 2, 2022, followed by DEX profits reinvested. The wallet has no correlated transaction patterns with any other wallet, no deposit-and-withdraw farming loops, no bridge-back-and-forth patterns — none of the X1 signals published by the ARB team apply.",
+      "The petitioner's wallet 0xC0FFEE0001A11ceB0b0000000000000000000003 satisfied C1 with strong signal: 217 transactions on Arbitrum One spread over 9 distinct months, plus a $312 bridge from Ethereum on July 18, 2022 (well before the September 30, 2022 threshold), plus native DEX activity on GMX, Camelot, and Radiant totalling $18,400 in volume. The wallet also has 21 transactions on Arbitrum Nova (C2). Points total across vectors is well above 3 (X3 does not apply). The wallet is a single-user EOA controlled by one individual (X2 does not apply). Funding history: initial 0.05 ETH from Coinbase on May 2, 2022, followed by DEX profits reinvested. The wallet has no correlated transaction patterns with any other wallet, no deposit-and-withdraw farming loops, no bridge-back-and-forth patterns - none of the X1 signals published by the ARB team apply.",
   },
   {
     slug: "ens",
@@ -106,7 +106,7 @@ async function writeWithRetry(
     } catch (e: any) {
       lastErr = e;
       const msg = String(e?.message ?? e).slice(0, 120);
-      console.log(`    ${label}: submission attempt ${attempt} failed — ${msg}`);
+      console.log(`    ${label}: submission attempt ${attempt} failed - ${msg}`);
       if (attempt < maxTries) await sleep(6_000 * attempt);
     }
   }
@@ -120,7 +120,7 @@ async function pollAccepted(client: any, hash: string, label: string) {
       tx = await client.getTransaction({ hash });
     } catch (err: any) {
       if (attempt % 5 === 0) {
-        console.log(`    ${label}: attempt ${attempt} — getTransaction retry (${String(err?.message ?? err).slice(0, 80)})`);
+        console.log(`    ${label}: attempt ${attempt} - getTransaction retry (${String(err?.message ?? err).slice(0, 80)})`);
       }
       await sleep(POLL_INTERVAL_MS);
       continue;
@@ -131,7 +131,7 @@ async function pollAccepted(client: any, hash: string, label: string) {
     }
     const statusName = String(tx.statusName ?? "");
     if (attempt === 1 || attempt % 4 === 0) {
-      console.log(`    ${label}: attempt ${attempt} — status=${statusName}`);
+      console.log(`    ${label}: attempt ${attempt} - status=${statusName}`);
     }
     if (ACCEPTED.has(statusName)) return tx;
     if (statusName === "UNDETERMINED" || statusName === "CANCELED") {
@@ -201,7 +201,7 @@ async function main() {
     // Give the sequencer a beat to reflect the new nonce before submitting the next tx.
     await sleep(4_000);
 
-    // Fetch the case_id — it's the current total_cases after the file.
+    // Fetch the case_id - it's the current total_cases after the file.
     const totalAfter = BigInt(
       (await client.readContract({
         address: contractAddress,

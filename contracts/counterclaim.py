@@ -1,6 +1,6 @@
 # { "Depends": "py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6" }
 
-# Counterclaim — validator-issued verdict layer on GenLayer.
+# Counterclaim - validator-issued verdict layer on GenLayer.
 # One person submits an algorithmic decision and its published rule;
 # validators independently reason about whether the algorithm followed
 # its own rule and return a structured, appealable verdict.
@@ -59,7 +59,7 @@ class Finding:
 @allow_storage
 @dataclass
 class Case:
-    """A single Counterclaim case — one algorithmic decision under review."""
+    """A single Counterclaim case - one algorithmic decision under review."""
 
     id: u256
     petitioner: Address

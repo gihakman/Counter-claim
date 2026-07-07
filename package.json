@@ -2,7 +2,7 @@
   "name": "counterclaim",
   "private": true,
   "type": "module",
-  "description": "Counterclaim — public, validator-issued verdicts on algorithmic decisions.",
+  "description": "Counterclaim: public, validator-issued verdicts on algorithmic decisions.",
   "scripts": {
     "deploy": "tsx deploy/deploy.ts",
     "seed": "tsx deploy/seed.ts",

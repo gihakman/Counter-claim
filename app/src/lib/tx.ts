@@ -110,7 +110,7 @@ export function useTxStatus() {
         }));
         if (TERMINAL.includes(phase)) return;
       } catch {
-        // transient — keep polling
+        // transient - keep polling
       }
       await new Promise((r) => setTimeout(r, 3000));
     }
@@ -141,7 +141,7 @@ export function useTxStatus() {
         return hash;
       } catch (err: any) {
         const raw = String(err?.shortMessage ?? err?.message ?? err);
-        // 4001 or "User rejected" — surface something calm rather than raw ABI dump.
+        // 4001 or "User rejected" - surface something calm rather than raw ABI dump.
         const isRejection = /reject|denied|4001/i.test(raw);
         setStatus({
           phase: "error",

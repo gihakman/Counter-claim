@@ -97,7 +97,7 @@ export function ConsolePage({ wallet, feeConfig, onFiled }: ConsoleProps) {
           {!wallet.isConnected && (
             <div className="empty" style={{ marginTop: 32 }}>
               Connect a wallet to sign the filing transaction. The site does
-              not hold any keys — signing happens in your wallet.
+              not hold any keys - signing happens in your wallet.
             </div>
           )}
 
@@ -201,7 +201,7 @@ function isInFlight(phase: string): boolean {
   ].includes(phase);
 }
 
-const SAMPLE_RULE = `Airdrop Eligibility Criteria (illustrative sample — replace with the real rule text you're challenging):
+const SAMPLE_RULE = `Airdrop Eligibility Criteria (illustrative sample - replace with the real rule text you're challenging):
 
 C1. The wallet made at least one transaction on the target chain before the snapshot block.
 C2. The wallet is not on the published Sybil filter list.

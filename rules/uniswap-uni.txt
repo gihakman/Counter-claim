@@ -1,4 +1,4 @@
-UNISWAP UNI GOVERNANCE TOKEN — AIRDROP ELIGIBILITY (Sep 2020 snapshot)
+UNISWAP UNI GOVERNANCE TOKEN - AIRDROP ELIGIBILITY (Sep 2020 snapshot)
 
 The initial UNI distribution granted 400 UNI per address to every wallet that met at least ONE of the conditions below at the snapshot block (Ethereum block 10861674, September 1, 2020 00:00 UTC). Liquidity providers received additional UNI proportional to historical liquidity, on a separate schedule.
 

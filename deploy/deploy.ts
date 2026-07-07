@@ -18,7 +18,7 @@ const CONTRACT_PATH = resolve(process.cwd(), "contracts/counterclaim.py");
 const DEPLOYMENTS_DIR = resolve(process.cwd(), "deployments");
 const DEPLOYMENT_FILE = resolve(DEPLOYMENTS_DIR, "bradbury.json");
 
-const DEFAULT_MIN_FEE_WEI = 10n ** 16n; // 0.01 GEN — well above consensus dust floor
+const DEFAULT_MIN_FEE_WEI = 10n ** 16n; // 0.01 GEN - well above consensus dust floor
 const POLL_INTERVAL_MS = 3_000;
 const POLL_MAX_ATTEMPTS = 120;         // ~6 min ceiling
 const ACCEPTED_STATE_NAMES = new Set([

@@ -1,4 +1,4 @@
-ENS GOVERNANCE TOKEN — AIRDROP ELIGIBILITY (Oct 2021 snapshot)
+ENS GOVERNANCE TOKEN - AIRDROP ELIGIBILITY (Oct 2021 snapshot)
 
 The ENS airdrop distributed the ENS governance token to accounts that owned at least one .eth name during the snapshot window. Snapshot date: October 31, 2021 00:00 UTC.
 

@@ -1,4 +1,4 @@
-ARBITRUM DAO — ARB AIRDROP ELIGIBILITY (Feb 2023 snapshot)
+ARBITRUM DAO - ARB AIRDROP ELIGIBILITY (Feb 2023 snapshot)
 
 The ARB airdrop distributed governance tokens across three activity vectors. Each vector granted "airdrop points" and the final ARB allocation was derived from a points schedule. Wallets receive ARB if and only if their combined points reach the minimum documented threshold, subject to explicit exclusions.
 

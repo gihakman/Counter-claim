@@ -25,7 +25,7 @@ export function Docs({ onFileCase, onViewArchive, cases }: DocsProps) {
             Counterclaim files, adjudicates, and publishes structured verdicts
             on algorithmic decisions. Every verdict is produced by independent
             validators on GenLayer, is appealable under Optimistic Democracy,
-            and is written to the chain — not to a vendor's dashboard.
+            and is written to the chain - not to a vendor's dashboard.
           </p>
 
           <div className="cta">
@@ -57,13 +57,13 @@ export function Docs({ onFileCase, onViewArchive, cases }: DocsProps) {
             </div>
             <div>
               <div>Verdicts on record</div>
-              <strong>{cases ?? "—"}</strong>
+              <strong>{cases ?? "-"}</strong>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Section 01 — What Counterclaim is -------------------------------- */}
+      {/* Section 01 - What Counterclaim is -------------------------------- */}
       <section className="section">
         <div className="container grid side">
           <div>
@@ -87,7 +87,7 @@ export function Docs({ onFileCase, onViewArchive, cases }: DocsProps) {
         </div>
       </section>
 
-      {/* Section 02 — Why GenLayer ---------------------------------------- */}
+      {/* Section 02 - Why GenLayer ---------------------------------------- */}
       <section className="section">
         <div className="container grid side">
           <div>
@@ -107,7 +107,7 @@ export function Docs({ onFileCase, onViewArchive, cases }: DocsProps) {
         </div>
       </section>
 
-      {/* Section 03 — How it works ---------------------------------------- */}
+      {/* Section 03 - How it works ---------------------------------------- */}
       <section className="section">
         <div className="container">
           <div className="section-num">§ 03</div>
@@ -150,7 +150,7 @@ export function Docs({ onFileCase, onViewArchive, cases }: DocsProps) {
         </div>
       </section>
 
-      {/* Section 04 — Contract surface ----------------------------------- */}
+      {/* Section 04 - Contract surface ----------------------------------- */}
       <section className="section">
         <div className="container">
           <div className="section-num">§ 04</div>
@@ -206,25 +206,25 @@ export function Docs({ onFileCase, onViewArchive, cases }: DocsProps) {
                 <td className="mono">get_case(id)</td>
                 <td>view</td>
                 <td>Return a case and its verdict as a structured record.</td>
-                <td>—</td>
+                <td>-</td>
               </tr>
               <tr>
                 <td className="mono">list_cases(offset, limit)</td>
                 <td>view</td>
                 <td>Paginated docket listing.</td>
-                <td>—</td>
+                <td>-</td>
               </tr>
               <tr>
                 <td className="mono">total_cases()</td>
                 <td>view</td>
                 <td>Count of all filed cases.</td>
-                <td>—</td>
+                <td>-</td>
               </tr>
               <tr>
                 <td className="mono">fee_config()</td>
                 <td>view</td>
                 <td>Deployed fee parameters and accrual counter.</td>
-                <td>—</td>
+                <td>-</td>
               </tr>
             </tbody>
           </table>
@@ -244,7 +244,7 @@ export function Docs({ onFileCase, onViewArchive, cases }: DocsProps) {
         </div>
       </section>
 
-      {/* Section 05 — Equivalence and consensus --------------------------- */}
+      {/* Section 05 - Equivalence and consensus --------------------------- */}
       <section className="section">
         <div className="container grid side">
           <div>
@@ -257,7 +257,7 @@ export function Docs({ onFileCase, onViewArchive, cases }: DocsProps) {
               validator produces a structured JSON verdict; every other
               validator receives the same rule text and evidence and judges
               whether the leader's verdict is faithful to that input under a
-              published criteria. Validators re-derive findings — they do not
+              published criteria. Validators re-derive findings - they do not
               rubber-stamp shape.
             </p>
             <p className="section-lede" style={{ marginTop: 16 }}>
@@ -276,7 +276,7 @@ export function Docs({ onFileCase, onViewArchive, cases }: DocsProps) {
         </div>
       </section>
 
-      {/* Section 06 — Filing cost ---------------------------------------- */}
+      {/* Section 06 - Filing cost ---------------------------------------- */}
       <section className="section">
         <div className="container grid side">
           <div>

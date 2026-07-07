@@ -3,7 +3,7 @@ import { testnetBradbury } from "genlayer-js/chains";
 import { getContractAddress } from "./config";
 
 /**
- * Read-only client — no account attached, no wallet dependency.
+ * Read-only client - no account attached, no wallet dependency.
  * Uses the public Bradbury RPC directly.
  */
 export function makeReadClient() {
@@ -11,7 +11,7 @@ export function makeReadClient() {
 }
 
 /**
- * Writable client — signing is delegated to the injected EIP-1193 wallet.
+ * Writable client - signing is delegated to the injected EIP-1193 wallet.
  *
  * `account` is passed as a string address (not a viem Account object). This
  * makes genlayer-js's transport route provider methods
