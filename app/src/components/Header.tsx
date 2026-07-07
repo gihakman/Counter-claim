@@ -1,5 +1,6 @@
 import React from "react";
 import { LogoMark, Wordmark } from "./Logo";
+import { GitHubLink } from "./GitHubLink";
 import type { WalletState } from "../lib/wallet";
 import { shortAddr } from "../lib/contract";
 
@@ -59,6 +60,7 @@ export function Header({ route, onNavigate, wallet }: HeaderProps) {
           </a>
         </nav>
         <div className="wallet">
+          <GitHubLink variant="icon" size={18} />
           <WalletButton wallet={wallet} />
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { CONTRACT_ADDRESS } from "../lib/client";
 import { explorerAddress, BRADBURY_EXPLORER } from "../lib/config";
+import { GitHubLink } from "../components/GitHubLink";
 
 interface DocsProps {
   onFileCase: () => void;
@@ -34,6 +35,7 @@ export function Docs({ onFileCase, onViewArchive, cases }: DocsProps) {
             <button className="btn ghost" onClick={onViewArchive}>
               Browse the verdict archive
             </button>
+            <GitHubLink variant="text" size={18} className="hero-source" />
           </div>
 
           <div className="meta">

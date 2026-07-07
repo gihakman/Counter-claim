@@ -712,3 +712,42 @@ table.docs td.mono {
   font-size: 13px;
   letter-spacing: 0.06em;
 }
+
+/* --- GitHub link ------------------------------------------------------- */
+.gh-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  color: var(--ink);
+  background: var(--paper);
+  text-decoration: none;
+  transition: color 120ms ease, background 120ms ease, border-color 120ms ease;
+}
+.gh-icon:hover {
+  color: var(--paper);
+  background: var(--ink);
+  border-color: var(--ink);
+}
+.gh-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--ink-2);
+  text-decoration: none;
+  font-family: var(--serif-body);
+  font-size: 14px;
+}
+.gh-link:hover {
+  color: var(--seal);
+}
+.gh-link svg {
+  flex-shrink: 0;
+}
+.gh-link.hero-source {
+  margin-left: 8px;
+  padding: 10px 4px;
+}

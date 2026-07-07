@@ -1,5 +1,6 @@
 import React from "react";
 import { LogoMark } from "./Logo";
+import { GitHubLink, REPO_URL } from "./GitHubLink";
 import {
   BRADBURY_EXPLORER,
   DEFAULT_CONTRACT_ADDRESS,
@@ -90,6 +91,28 @@ export function Footer() {
                   rel="noreferrer"
                 >
                   GitHub
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>Source</h4>
+            <ul>
+              <li>
+                <GitHubLink variant="text" size={16} />
+              </li>
+              <li>
+                <a href={REPO_URL} target="_blank" rel="noreferrer">
+                  Report an issue
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`${REPO_URL}/blob/main/README.md`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  README
                 </a>
               </li>
             </ul>
