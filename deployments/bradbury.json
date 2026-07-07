@@ -1,0 +1,15 @@
+{
+  "network": "testnet-bradbury",
+  "chainId": 4221,
+  "rpc": "https://rpc-bradbury.genlayer.com",
+  "explorer": "https://explorer-bradbury.genlayer.com",
+  "contractAddress": "0x3FD5049B60FF5F78a85689BB37Ec3A2F86D1AEE1",
+  "deployTxHash": "0x70752ddb4c9ab567816ff606ac3139c0d4d789f52b427772811fedb0d59a6cff",
+  "explorerContract": "https://explorer-bradbury.genlayer.com/address/0x3FD5049B60FF5F78a85689BB37Ec3A2F86D1AEE1",
+  "explorerDeployTx": "https://explorer-bradbury.genlayer.com/tx/0x70752ddb4c9ab567816ff606ac3139c0d4d789f52b427772811fedb0d59a6cff",
+  "deployer": "0x0b30FFf90Ed88739670A0bf10e9e70717372Ae28",
+  "minFeeWei": "10000000000000000",
+  "feeRecipient": "0x0b30FFf90Ed88739670A0bf10e9e70717372Ae28",
+  "feeBps": 100,
+  "deployedAt": "2026-07-07T16:27:41.510Z"
+}

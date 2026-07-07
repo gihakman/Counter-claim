@@ -1,0 +1,138 @@
+{
+  "ctor": {
+    "params": [
+      [
+        "min_fee",
+        "int"
+      ],
+      [
+        "fee_recipient",
+        "string"
+      ],
+      [
+        "fee_bps",
+        "int"
+      ]
+    ],
+    "kwparams": {}
+  },
+  "methods": {
+    "adjudicate": {
+      "params": [
+        [
+          "case_id",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "appeal": {
+      "params": [
+        [
+          "case_id",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "fee_config": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "dict"
+    },
+    "file_case": {
+      "params": [
+        [
+          "respondent_label",
+          "string"
+        ],
+        [
+          "rule_text",
+          "string"
+        ],
+        [
+          "decision_challenged",
+          "string"
+        ],
+        [
+          "evidence_text",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "int",
+      "payable": true
+    },
+    "file_case_from_url": {
+      "params": [
+        [
+          "respondent_label",
+          "string"
+        ],
+        [
+          "rule_source_url",
+          "string"
+        ],
+        [
+          "decision_challenged",
+          "string"
+        ],
+        [
+          "evidence_text",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "int",
+      "payable": true
+    },
+    "get_case": {
+      "params": [
+        [
+          "case_id",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "dict"
+    },
+    "list_cases": {
+      "params": [
+        [
+          "offset",
+          "int"
+        ],
+        [
+          "limit",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "array"
+    },
+    "total_cases": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "int"
+    },
+    "withdraw_fees": {
+      "params": [],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    }
+  }
+}
