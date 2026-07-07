@@ -1,0 +1,21 @@
+{
+  "name": "counterclaim",
+  "private": true,
+  "type": "module",
+  "description": "Counterclaim — public, validator-issued verdicts on algorithmic decisions.",
+  "scripts": {
+    "deploy": "tsx deploy/deploy.ts",
+    "seed": "tsx deploy/seed.ts",
+    "lint": "cd contracts && genvm-lint check counterclaim.py",
+    "test": "pytest tests/direct -v",
+    "app:dev": "cd app && npm run dev",
+    "app:build": "cd app && npm run build",
+    "app:install": "cd app && npm install"
+  },
+  "devDependencies": {
+    "dotenv": "16.4.7",
+    "genlayer-js": "1.2.0",
+    "tsx": "4.19.2",
+    "typescript": "5.5.4"
+  }
+}

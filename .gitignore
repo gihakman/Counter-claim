@@ -1,0 +1,38 @@
+# --- env / secrets ---
+.env
+.env.*
+!.env.example
+
+# --- node / frontend ---
+node_modules/
+dist/
+build/
+.vercel/
+*.log
+
+# --- python ---
+.venv/
+.venv-*/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- build / test artifacts ---
+artifacts/
+cache/
+coverage/
+.coverage
+.nyc_output/
+
+# --- editor / os junk ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
