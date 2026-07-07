@@ -7,3 +7,4 @@ tests/
 contracts/
 deploy/
 artifacts/
+requirements.txt
